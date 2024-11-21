@@ -1,16 +1,62 @@
-# Welcome to your Expo app 👋
+# React Native Calculator 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Description
+A sleek and functional calculator developed in **React Native**, inspired by the minimalist design of Xiaomi calculators. This application allows users to perform basic mathematical operations like addition, subtraction, multiplication, and division, with an interface optimized for mobile devices.
 
-## Get started
+---
+
+## Features
+- ✅ Minimalist and modern interface.
+- ✅ Basic mathematical operations:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+- ✅ Responsive for different screen sizes.
+- ✅ Inspired by Xiaomi calculator design.
+- ✅ Lightweight and easy to use.
+
+---
+
+## Screenshots
+```markdown
+![Main Screen](screenshots/1.png)
+![Operation Screen](screenshots/2.png)
+```
+
+---
+
+## Technologies Used
+- **React Native**: Main framework for app development.
+- **Expo**: Simplifies environment setup and app development.
+- **JavaScript**: Core language for application logic.
+- **React Native Vector Icons**: For icons used in the calculator.
+
+---
+
+## System Requirements
+- **Node.js**: v20 or higher.
+- **Expo CLI**: v5 or higher.
+- **Android/iOS device or emulator**.
+
+---
+
+## Installation and Usage
 
 1. Install dependencies
+
+   ```bash
+   git clone https://github.com/carlosJCVC/calculator.git
+   cd your-repository
+   ```
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
    ```bash
     npx expo start

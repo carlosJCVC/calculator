@@ -23,7 +23,6 @@ const RootLayout = () => {
 
   return (
     <View style={globalStyles.background}>
-      <Text>RootLayout</Text>
 
       <Slot />
 

@@ -1,25 +1,21 @@
-import { View, Text, Pressable } from 'react-native'
+import { View, Text, Pressable, TextProps } from 'react-native'
 import React from 'react'
 import { globalStyles } from '@/styles/global-styles'
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 import * as Haptics from 'expo-haptics';
+import { Colors } from '@/constants/Colors';
+// import Feather from '@expo/vector-icons/Feather';
 
-interface Props {
-    label: string;
-    color?: string
-    blackText?: boolean;
-    doubleSize?: boolean;
+interface Props extends TextProps {
     onPress: () => void;
 }
 
-export default function CalculatorBtn({label, color = Colors.darkGray, blackText = false, doubleSize = false, onPress}: Props) {
+export default function CalculatorBtn({children, onPress}: Props) {
   return (
     <Pressable
       style={({pressed}) => ({
         ...globalStyles.btn,
-        backgroundColor: color,
+        // backgroundColor: color,
         opacity: pressed? 0.8 : 1,
-        width: doubleSize? 180 : 80,
       })}
       onPress={ () => {
         // Haptics.notificationAsync(
@@ -31,13 +27,7 @@ export default function CalculatorBtn({label, color = Colors.darkGray, blackText
         onPress()
       } }
     >
-      <Text
-        style={{
-            ...globalStyles.textBtn,
-            color: blackText? 'black' : 'white'
-        }}
-
-      >{label}</Text>
+      {children}
     </Pressable>
   )
 }
